@@ -1,0 +1,66 @@
+<html >
+   
+    <body class="ob">
+        <link href="{{url_for('static',filename='styles/profile.css')}}" rel="stylesheet" type="text/css">
+    
+        <script src="{{url_for('static',filename='js/signup.js')}}"></script>
+        <nav class="navbar">
+            <div class="navdiv">
+        <div class="logo"><h1 style="color:rgb(8, 0, 113); padding-left:30px;">SRI RAMAKRISHNA ENGINEERING COLLEGE</h1></div>
+        <ul>
+            <li>
+                <a href="open" >Home</a>
+            </li>
+            <li>
+                <a href="user_profile" >UserProfile</a>
+            </li>
+            <button>
+                <a href="{{url_for('logout')}}" style="color:white;">Logout</a>
+            </button>
+        </ul>
+        </div>
+        </nav>
+        <div >
+            <div class="head">
+            <center>
+            <h3 style="padding-bottom: 25px; padding-top:25px; color:white;">Hi {{session['name']}} !!!</h3>
+          </center>
+            </div>
+        </div>
+        <label>
+            <input type="checkbox">
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+            <div class="slide">
+                <h1 class="m">MENU</h1>
+                <ul class="h">
+                    <li><a href="staffleave">Apply to leave</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Past leave history</a></li>
+                    <li><a href="#">Casual leave</a></li>
+                </ul>
+            </div>
+        </label>
+   <footer class="foot" >
+        <center><p>
+        Sri Ramakrishna Engineering college</p>
+        <p>Vattamalai Palayam</p>
+        <p>Coimbatore
+        </p>
+        </center>
+    </footer>
+    </body>
+</html>
+    <style>
+        .foot{background-color: white;
+            position:sticky;
+            top:100%;
+            color:rgb(8, 0, 113);
+        }</style>
+    
+    
+</html>
+

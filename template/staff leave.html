@@ -1,0 +1,69 @@
+<body  id="grad">
+  <div id="ob">
+    <link href="{{url_for('static',filename='styles/common.css')}}" rel="stylesheet" type="text/css">
+    
+    <nav class="navbar">
+        <div class="navdiv">
+    <div class="logo"><h1>SRI RAMAKRISHNA ENGINEERING COLLEGE</h1></div>
+    <ul>
+        <li>
+            <a href="open"  >Home</a>
+        </li>
+        <button>
+            <a href="{{url_for('logout')}}"  >Logout</a>
+        </button>
+    </ul>
+    </div>
+    </nav>
+</div>
+  <center>
+  <link href="{{url_for('static',filename='styles/leaveform.css')}}" rel="stylesheet" type="text/css">
+<h3 h3 style="color:rgb(8, 0, 113)">Leave Application</h3>
+<div class="h">
+<form action="" method="POST" autocomplete="off">
+<table >
+<tr width="1000" height="50"> <th width="500">Name</th><th width="500"><input type="text" id="name" name="aname"></th></tr>
+<tr width="1000" height="50"> <th width="500">Department</th><th width="500"><input type="text" id="department" name="adept" ></th></tr>
+<tr width="1000" height="50"> <th width="500">Designation</th><th width="500"><input type="text" id="designation" name="adesignation"></th></tr>
+<tr width="1000" height="50"> <th width="500" name="leavetype">Type of leave</th><th>
+  <select name="Type of leave" id="type" width="500">
+  <option value="Casual leave">Casual leave</option>
+  <option value="Compensatory Holiday">Compensatory Holiday</option>
+  <option value="Medical Leave">Medical Leave</option>
+  <option value="Maternity Leave">Maternity Leave</option>
+  <option value="Leave on Loss of Pay">Leave on Loss of Pay</option>
+  <option value="Vacation Leave">Vacation Leave</option>
+  <option value="On Duty">On Duty</option>
+  <option value="Vacation Leave">Vacation Leave</option>
+  <option value="Earned Leave">Earned Leave</option>
+    <option value="Special On Duty">Special On Duty</option>
+  <option value="Permission">Permission</option>
+  
+</select></th></tr>
+<tr width="1000" height="50"><th width="500">If OD upload the OD ducument</th><th width="500"><input type="file" id="od doc" name="adoc"></th></tr>
+<tr width="1000" height="50"> <th width="500">From Date:</th><th width="500"><input type="date" id="from" name="afdate"></th></tr>
+<tr><th width="500">To Date:</th><th><input type="date" id="to" width="500" name="atdate"></th></tr>
+<tr width="1000" height="50"> <th width="500">Reason for leave</th><th width="500"><input type="text" id="reason" name="areason"></th></tr>
+<tr width="1000" height="50"> <th width="500">Address</th><th width="500"><input id="address" name="aaddress"></th></tr>
+<tr width="1000" height="50"> <th width="500">Contact No.</th><th width="500"><input  id="contact" name="acontact"></th></tr>
+</table>
+<input type='submit'  name="application" value="Submit">
+</div>
+</form>
+</center>
+<footer class="foot">
+    <center><p>
+    Sri Ramakrishna Engineering college</p>
+    <p>Vattamalai Palayam</p>
+    <p>Coimbatore
+    </p>
+    </center>
+</footer>
+</body>
+<style>
+    .foot{background-color: rgb(8, 0, 113);
+        position:sticky;
+        top:100%;
+        color:white;
+    }</style>
+

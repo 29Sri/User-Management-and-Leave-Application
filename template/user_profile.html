@@ -1,0 +1,49 @@
+<head>
+    <link href="{{url_for('static',filename='styles/userprofile.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <center>
+    <div style="margin-top:100px">
+        <h2 style="color:rgb(8, 0, 113)">
+            Profile
+        </h2>
+        <form method="post" action="/update_user">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                   {% for category, message in messages %}
+                      <div class="alert alert-{{category}}" role="alert">{{message}}</div>
+                   {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <tr>  <div class="form-group">
+                <th><label>User Name</label></th>
+                    <th> <input type="text" name="name" value="{{res.name}}" class="form-control"></th>
+                   </div></tr>
+                  <tr> <div class="form-group">
+                    <th><label>Password</label></th>
+                   <th> <input type="text" name="password" value="{{res.password}}" class="form-control"></th>
+                   </div></tr>
+                  <tr><div class="form-group">
+                    <th><label>Department</label></th>
+                   <th> <input type="text" name="dept" value="{{res.dept}}" class="form-control"></th>
+                   </div></tr>
+                   <tr><div class="form-group">
+                    <th><label>Address</label></th>
+                    <th><input type="text" name="address" value="{{res.address}}" class="form-control"></th>
+                   </div></tr>
+                   <tr><div class="form-group">
+                   <th> <label>Contact</label></th>
+                   <th> <input  name="contact" value="{{res.contact}}" class="form-control"></th>
+                   </div></tr>
+                   <tr><div class="form-group">
+                    <th><label>E-mail</label></th>
+                   <th><input type="text" name="mail" value="{{res.mail}}" class="form-control"></th>
+                   </div></tr>
+                  <tr><div class="form-group">
+                   <th><input type="submit"  value="Update Profile" class="form-control" id="sri"></th>
+                   </div></tr>
+               
+        </form>
+        </div>
+</center>
+</body>

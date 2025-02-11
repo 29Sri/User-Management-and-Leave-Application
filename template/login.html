@@ -1,0 +1,81 @@
+<body id="grad">
+    <div id="ob">
+        <link href="{{url_for('static',filename='styles/common.css')}}" rel="stylesheet" type="text/css">
+        
+        <nav class="navbar">
+            <div class="navdiv">
+        <div class="logo"><h1>SRI RAMAKRISHNA ENGINEERING COLLEGE</h1></div>
+        <ul>
+            <li>
+                <a href="open">Home</a>
+            </li>
+            <li>
+                <a href="about">About</a>
+            </li>
+            <li>
+                <a href="contact">Contact</a>
+            </li>
+            <li>
+                <a href="#">Login</a>
+                <ul class="dropdown">
+                    <li><a href="login">Staff</a></li>
+                    <li><a href="plog">Principal</a></li>
+                    <li><a href="alog">HODs</a></li>
+    
+                </ul>
+            </li>
+            <button>
+                <a href="signup">Signup</a>
+            </button>
+        </ul>
+        </div>
+        </nav>
+    </div>
+<center>
+<link href="{{url_for('static',filename='styles/loginstaff.css')}}" rel="stylesheet" type="text/css">
+<h3 h3 style="color: rgb(8, 0, 113)">Leave Application</h3>
+<img src="{{url_for('static',filename='image/srec.jpeg')}}" width="1250px" height="500px">
+<h2 h2 style="color: rgb(8, 0, 113);">Staff of SREC can Sign Up using their college mail id</h2>
+<form method="POST" action="">
+<div class="f">
+<h1  h1 style="color: rgb(8, 0, 113)">Login</h1>
+<input type="text" placeholder="Username" required id="Username" name="uname"></input>
+<input type="text" placeholder="Password" required id="Password" name="password"></input>
+<a href=>forget password?</a>
+<input   type='submit'  name="ulogin" value="Login">
+<p>If not signed up</p>
+<a href="signup">Sign Up</a>
+</form>
+</div>
+</center>
+<footer class="foot">
+    <center>
+    <p>Sri Ramakrishna Engineering college</p>
+    <p>Vattamalai Palayam</p>
+    <p>Coimbatore
+    </p>
+    </center>
+</footer>
+</body>
+<script>
+function gotoform(){
+    var username=document.getElementById("Username").value;
+    var password=document.getElementById("Password").value;
+    if(username =="" && password =="")
+    { 
+        alert("Login Sucessfully");
+        window.location.assign("profile");
+        
+    }
+    else{
+        alert("Invalid Information");
+        return;
+    }
+}
+</script>
+<style>
+    .foot{background-color: rgb(8, 0, 113);
+        position:sticky;
+        top:100%;
+        color:white;
+    }</style>

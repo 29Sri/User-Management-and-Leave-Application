@@ -1,0 +1,64 @@
+<center><head>
+    <div id="ob">
+        <link href="{{url_for('static',filename='styles/common.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{url_for('static',filename='styles/admin.css')}}" rel="stylesheet" type="text/css">
+        <nav class="navbar">
+            <div class="navdiv">
+        <div class="logo"><h1>SRI RAMAKRISHNA ENGINEERING COLLEGE</h1></div>
+        <ul>
+            <li>
+                <a href="open"  >Home</a>
+            </li>
+        </ul>
+        </div>
+        </nav>
+    </div>
+
+</head>
+<body>
+<div style="margin-top:100px"></div>
+<h3>Users</h3>
+{% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                        {% for category, message in messages %}
+                             <div>{{message}}</div>
+                        {% endfor %}
+                {% endif %}
+{% endwith %}
+<table border="1">
+<thead>
+    <tr>
+        <th style="text-align:center">S.No</th>
+        <th style="text-align:center">Name</th>
+        <th style="text-align:center">Department</th>
+        <th style="text-align:center">Address</th>
+        <th style="text-align:center">Contact</th>
+        <th style="text-align:center">Mail</th>
+        <th style="text-align:center">Delete</th>
+    </tr>
+</thead>
+<tbody>
+    {% for data in res %}
+    <tr>
+        <td style="text-align:center">{{loop.index}}</td>
+        <td>{{data.name}}</td>
+        <td style="text-align:center">{{data.dept}}</td>
+        <td>{{data.address}}</td>
+        <td style="text-align:center">{{data.contact}}</td>
+        <td>{{data.mail}}</td>
+        <td style="text-align:center"><a href="{{url_for('delete_users',id=data['pid'])}}" style="color:red;" >Delete</a></td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>    
+                
+</body>
+<footer class="foot">
+    <center>
+        <p>Sri Ramakrishna Engineering college</p>
+        <p>Vattamalai Palayam</p>
+        <p>Coimbatore
+        </p>
+        </center>
+</footer>
+</center>

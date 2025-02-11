@@ -1,0 +1,40 @@
+form {
+    width:330px;
+    padding:2rem 1rem;
+    margin: 50px auto;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:0 15px 30px black;
+    }
+    input {
+        padding: 3px;
+        box-shadow: 3px 3px 5px grey;
+        font-size: 14px;
+        font-weight: 600;
+         text-align: center;
+        width: 300px;
+        border-radius:15px;
+
+      }
+    label {
+        color: rgb(8, 0, 113);
+        font-weight: bold;
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      label:after { content: ": " }
+#sri{
+        font-size: 1rem;
+        margin-top:1.8rem;
+        padding:10px 0;
+        border-radius: 15px;
+        outline:none;
+        border: none;
+        width:90%;
+        color:white;
+        background: rgb(8, 0, 113);
+        }

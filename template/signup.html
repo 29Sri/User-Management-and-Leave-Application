@@ -1,0 +1,74 @@
+<body id="grad">
+    <div id="ob">
+        <link href="{{url_for('static',filename='styles/common.css')}}" rel="stylesheet" type="text/css">
+        
+        <nav class="navbar">
+            <div class="navdiv">
+        <div class="logo"><h1 >SRI RAMAKRISHNA ENGINEERING COLLEGE</h1></div>
+        <ul>
+            <li>
+                <a href="open"  >Home</a>
+            </li>
+            <li>
+                <a href="about"  >About</a>
+            </li>
+            <li>
+                <a href="contact"  >Contact</a>
+            </li>
+            <li>
+                <a href="#"  >Login</a>
+                <ul class="dropdown">
+                    <li><a href="login">Staff</a></li>
+                    <li><a href="plog">Principal</a></li>
+                    <li><a href="alog">HODs</a></li>
+    
+                </ul>
+            </li>
+            <button>
+                <a href="signup"  >Signup</a>
+            </button>
+        </ul>
+        </div>
+        </nav>
+    </div>
+<center>
+    <script src="{{url_for('static',filename='js/signup.js')}}"></script>
+    <link href="{{url_for('static',filename='styles/loginstaff.css')}}" rel="stylesheet" type="text/css">
+<h3 h3 style="color:rgb(8, 0, 113)">Leave Application</h3>
+<img src="{{url_for('static',filename='image/srec.jpeg')}}" width="1250px" height="500px">
+<h2 h2 style="color:rgb(8, 0, 113);">Staff of SREC can Sign Up using their college mail id</h2>
+<form action="" method="POST" autocomplete="off">
+<div class="f">
+<h1  h1 style="color:rgb(8, 0, 113);">Sign Up</h1>
+<input type="text" placeholder="Username"  id="username" name="uname"></input>
+<input type="text" placeholder="Password"  id="password" name="password"></input>
+<input type="text" placeholder="Confirm password" id="repassword" name="rePassWord" onkeyup="validate_password()"></input>
+<input type="text" placeholder="Department"  id="dept" name="dept"></input>
+<input type="text" placeholder="Address"  id="address" name="address"></input>
+<input placeholder="Contact"  id="contact" name="contact"></input>
+<input type="email" placeholder="E-mail"  id="email" name="mail"></input>
+<p></p>
+ <span id="wrong_pass_alert"></span>
+<input   type='submit' onclick="wrong_pass_alert();" id:"create" name="register" value="Sign Up">
+<p>If already signed up</p>
+<a href="login">Login</a>
+</form>
+</div>
+</center>
+<footer class="foot">
+    <center><p>
+    Sri Ramakrishna Engineering college</p>
+    <p>Vattamalai Palayam</p>
+    <p>Coimbatore
+    </p>
+    </center>
+</footer>
+</body>
+<style>
+    .foot{background-color: rgb(8, 0, 113);
+        position:sticky;
+        top:100%;
+        color:white;
+    }</style>
+
+

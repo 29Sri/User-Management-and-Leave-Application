@@ -1,0 +1,51 @@
+form input{
+    width:50%;
+    outline:none;
+    border:1px solid #fff;
+    padding:12px 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    background:rgba(255,255,255,0.8);
+    padding-top: 25px;
+    }
+    form select{
+    width:50%;
+    outline:none;
+    border:1px solid #fff;
+    padding:12px 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    background:rgba(255,255,255,0.8);
+    padding-top: 25px;
+    
+    }
+    form th{
+    width:50%;
+    outline:none;
+    border:1px solid skyblue;
+    padding:12px 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius: 20px;
+    background:rgba(255,255,255);
+    box-shadow: 0 0 8px skyblue;
+    
+   
+    }
+    
+    .h button{
+    font-size: 1rem;
+    margin-top:1.8rem;
+    padding:10px 0;
+    border-radius: 20px;
+    outline:none;
+    border: none;
+    width:25%;
+    background:skyblue;
+    }
+    
+    #grad {
+        background-image: white;
+      }

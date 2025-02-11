@@ -1,0 +1,39 @@
+<head>
+    <div id="ob">
+        <link href="{{url_for('static',filename='styles/common.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{url_for('static',filename='styles/admin.css')}}" rel="stylesheet" type="text/css">
+        <nav class="navbar">
+            <div class="navdiv">
+        <div class="logo"><h1>SRI RAMAKRISHNA ENGINEERING COLLEGE</h1></div>
+        <ul>
+            <li>
+                <a href="{{url_for('princi_home')}}">Welcome:{{session["pname"]}}</a>
+            </li>
+            <li>
+                <a href="open"  >Home</a>
+            </li>
+            <li>
+                <a href="#"  >Requests</a>
+            </li>
+            <li>
+                <a href="qview_users">Users</a>
+            </li>
+            <li>
+                <a href="{{url_for('logout')}}">Logout</a>
+            </li>
+        </ul>
+        </div>
+        </nav>
+    </div>
+</head>
+<body>
+
+</body>
+<footer class="foot">
+    <center>
+        <p>Sri Ramakrishna Engineering college</p>
+        <p>Vattamalai Palayam</p>
+        <p>Coimbatore
+        </p>
+        </center>
+</footer>
